@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>city-select</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="city.css">
+</head>
+
+<body>
+    <div class="sps-ui-box clearfix" style="padding:10px;">
+        <span class="pull-left">
+                                        城市筛选公共组件（jquery.citySelect.js 最新代码以线上未准，本地只为静态展示）
+                                        线上用法：
+                                            <pre>
+&lt;hrel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css"&gt;
+&lt;hrel="stylesheet" type="text/css" href="../../assets/css/city.css"&gt;
+&lt;div id="jsCitySelect"&gt;&lt;/div&gt;
+&lt;script src="../../assets/js/plugins/jquery.js"&gt;&lt;script&gt;
+&lt;script src="../../assets/js/plugins/bootstrap.js"&gt;&lt;script&gt;
+&lt;script src="../../assets/js/plugins/jquery.citySelect.online.js"&gt;&lt;script&gt;
+&lt;script &gt;
+    $('#jsCitySelect').citySelect({
+        areaType:"CITY",//选择到市级
+        //areaType:"DISTRICT",// 选择到区
+        filterArea:function(areaType){
+            //回调
+            console.log($("#areaId").val())
+            console.log(areaType)
+        }
+    });
+&lt;script&gt;
+                                            </pre>
+                                        </span>
+        <!-- jsCitySelect主体 -->
+        <div id="jsCitySelect" class="pull-left">
+            <div class="sass-city-select">
+                <div class="city-input-box">
+                    <span class="city-result">
+                                                    <span class="sass-province"></span>
+                    <i class="gray">/</i>
+                    <span class="sass-city"></span>
+                    <i class="gray">/</i>
+                    <span class="sass-area"></span>
+                    </span>
+                    <i class="arrow"></i>
+                </div>
+                <input type="hidden" name="areaId" class="areaId" value="-1">
+                <div class="sass-city-panel" style="display:none;">
+                    <div role="tabpanel">
+                        <!-- Nav tabs -->
+                        <ul class="scity-nav scity-nav-tabs clearfix" role="tablist">
+                            <li role="cityPanel" class="active">
+                                <a href="#panel-province" aria-controls="panel-province" role="tab" data-toggle="tab">省份</a>
+                            </li>
+                            <li role="cityPanel">
+                                <a href="#panel-city" aria-controls="panel-city" role="tab" data-toggle="tab">城市</a>
+                            </li>
+                            <li role="cityPanel">
+                                <a href="#panel-area" aria-controls="panel-area" role="tab" data-toggle="tab">区县</a>
+                            </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="panel-province">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>A-Z</dt>
+                                            <dd>
+                                                <span class="active">安徽</span>
+                                                <span>北京</span><span>北京</span><span>北京</span><span>北京</span><span>北京</span><span>北京</span><span>北京</span><span>北京</span><span>北京</span><span>北京</span><span>北京</span><span>北京</span><span>北京</span>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>A-Z</dt>
+                                            <dd>
+                                                <span>安徽</span>
+                                                <span>北京</span>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="panel-city">
+                                <ul>
+                                    <li class="clearfix">
+                                        <span class="active">安徽</span>
+                                        <span>北京</span>
+                                        <span>北京</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="panel-area">
+                                <ul>
+                                    <li class="clearfix">
+                                        <span class="active">河南</span>
+                                        <span>北京</span>
+                                        <span>北京</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jQuery v1.11.3.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="jquery.citySelect.local.js"></script>
+    <script>
+    $('#jsCitySelect').citySelect();
+    </script>
+    <!-- jsCitySelect主体 end-->
+</body>
+
+</html>

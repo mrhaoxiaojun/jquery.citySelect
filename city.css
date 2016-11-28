@@ -1,0 +1,143 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+ul li{
+    list-style: none;
+}
+/*----------------------------------------------------城市选择 start----------------------------------------------------*/
+.sass-city-select {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    width: 300px;
+    /*height: 28px;*/
+    line-height: 28px;
+    border: 1px #ddd solid;
+    font-size: 12px;
+}
+
+.sass-city-select .city-input-box {
+    background: #fff;
+    cursor: pointer;
+}
+
+.sass-city-select .city-result {
+    margin-left: 10px;
+}
+
+.sass-city-select .city-result i {
+    margin: 0 5px;
+}
+
+.sass-city-select i {
+    font-weight: 400;
+}
+
+.sass-city-select .gray {
+    color: #a3a3a3;
+}
+
+.sass-city-select .sass-city-panel {
+    width: 300px;
+    top: 26px;
+    left: -1px;
+    position: absolute;
+    border: 1px #ddd solid;
+    background: #fff;
+    z-index: 10;
+}
+
+.sass-city-select .arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 10px;
+    top: 10px;
+    border: 5px #fff solid;
+    border-top: 5px #009df8 solid;
+}
+
+.sass-city-select .scity-nav-tabs {
+    /*border-bottom: 1px #ddd solid;*/
+    border-bottom: none;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.sass-city-select .scity-nav-tabs>li {
+    /*margin: -1px;*/
+    width: 33.333333%;
+    text-align: center;
+    float: left;
+}
+
+.sass-city-select .scity-nav-tabs>li a {
+    display: inline-block;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin-right: 0;
+    padding: 0;
+    height: 35px;
+    line-height: 35px;
+    background: #f0f0f0;
+    color: #000;
+    font-size: 12px;
+    /*border: 1px #ddd solid;*/
+    width: 100%;
+}
+
+.sass-city-select .scity-nav-tabs>li.active a {
+    background: #fff;
+    color: #f60;
+    border-bottom: 0;
+}
+
+.sass-city-select .tab-content {
+    padding: 15px;
+}
+
+.sass-city-select .tab-content li dl {
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 0;
+}
+
+.sass-city-select .tab-content li dt {
+    float: left;
+    width: 40px;
+    line-height: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+.sass-city-select .tab-content li dd {
+    float: right;
+    width: 225px;
+    /*background:#f00;*/
+}
+
+.sass-city-select .tab-content li span {
+    float: left;
+    padding: 0 10px;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.sass-city-select .tab-content li span.active {
+    background: #f60;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.sass-city-select .scity-nav-tabs>li>a,
+.sass-city-select .scity-nav-tabs>li.active>a,
+.sass-city-select .scity-nav-tabs>li.active>a:focus,
+.sass-city-select .scity-nav-tabs>li.active>a:hover {
+    border: none;
+}
+
+
+/*----------------------------------------------------城市选择 end----------------------------------------------------*/
